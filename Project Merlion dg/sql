@@ -1,1 +1,18 @@
+UPDATE Module1
+SET programming_manages = 'manage'
+WHERE programming_manages = '1';
+----------------------------------------
 
+SELECT COLUMN_NAME
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'module';
+----------------------------------------
+UPDATE module
+SET TOTAL_SALARY =
+  COALESCE(_10_01_2017, 0) + COALESCE(_10_02_2017, 0) +
+  COALESCE(_10_03_2017, 0) + COALESCE(_10_04_2017, 0) +
+  COALESCE(_10_05_2017, 0) + COALESCE(_10_06_2017, 0) +
+  COALESCE(_10_07_2017, 0) + COALESCE(_10_08_2017, 0) +
+  COALESCE(_10_09_2017, 0) + COALESCE(_10_10_2017, 0) +
+  COALESCE(_10_11_2017, 0) + COALESCE(_10_12_2017, 0);
+----------------------------------------
