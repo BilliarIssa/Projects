@@ -1,0 +1,1 @@
+SELECT [Status].dbo.CompanyCount1('За_городом');
